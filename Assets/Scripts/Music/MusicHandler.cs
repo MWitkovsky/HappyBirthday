@@ -5,11 +5,10 @@ public class MusicHandler : MonoBehaviour {
 
     public AudioClip intro, mainSong;
 
-    private AudioSource src, src2;
+    private AudioSource src2;
 
     void Start()
     {
-        src = GetComponent<AudioSource>();
         src2 = gameObject.AddComponent<AudioSource>();
 
         src2.loop = true;

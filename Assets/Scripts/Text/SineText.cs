@@ -19,7 +19,6 @@ public class SineText : MonoBehaviour {
         textMeshes = new List<TextMesh>();
         center = transform.position.y;
 
-        int i = 0;
         float offset = 0.0f;
 	    while (text != "")
         {
@@ -32,7 +31,6 @@ public class SineText : MonoBehaviour {
             text = text.Substring(1);
             o.transform.parent = transform;
             textMeshes.Add(t);
-            ++i;
         }
 
         FindObjectOfType<ColorChangerSineText>().SetTextMeshes(textMeshes);
